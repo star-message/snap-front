@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "axios": "^1.2.2",
+    "leapjs": "^1.1.1",
+    "leapjs-plugins": "^0.1.12",
     "terser-webpack-plugin": "^5.3.6"
   }
 }
