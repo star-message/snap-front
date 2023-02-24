@@ -1,4 +1,4 @@
-export const formattedNumber = (number) => Number(number * 10).toFixed(4)
+export const formattedNumber = (number) => Math.abs(Number(number * 10).toFixed(2))
 
 export const getRandomIntInclusive = (min, max) => {
   min = Math.ceil(min)

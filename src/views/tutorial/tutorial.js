@@ -6,6 +6,7 @@ import { appButton } from '../../components/button'
 import { renderDobbyProgress } from '../progress/dobby.js'
 import { appImg } from '../../components/img'
 import { renderBallonProgress } from '../progress/balloon'
+import { state } from '../../store/state'
 
 const tutorialBox = ({ gifSrc, title, description, idx }) => {
   const gif = appImg(gifSrc)
@@ -17,6 +18,7 @@ const tutorialBox = ({ gifSrc, title, description, idx }) => {
 }
 
 export const renderDobbyTutorial = () => {
+  state.audio = true
   selector.body.innerHTML = ''
   const title = appTitle('mission 1')
   const subTitle = appSubTitle('FREE DOBBY')
@@ -27,7 +29,6 @@ export const renderDobbyTutorial = () => {
   insertAdjacentElement(selector.body, startButton)
 }
 
-// const ballonBtn = () => renderBallen
 export const renderBalloonTutorial = () => {
   selector.body.innerHTML = ''
   const title = appTitle('mission 2')

@@ -118,11 +118,11 @@
 }
 
 .drop {
-  transform: translateY(-30px);
   border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
   background: transparent;
   box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 10px 20px 20px 0px #c9c9c9;
   transition: width 1s, height 1s;
+  transform: rotate(30deg);
 }
 
 .drop::before {
@@ -131,7 +131,7 @@
   border-radius: 38% 55% 46% 48%;
   background: white;
   width: 45px;
-  transform: rotate(-90deg);
+  transform: rotate(-30deg);
   height: 14px;
   top: 20px;
   left: 25px;
@@ -146,4 +146,43 @@
   height: 10px;
   top: 60px;
   left: 20px;
+}
+
+.clock {
+  background: #ececec;
+  width: 300px;
+  height: 300px;
+  margin: 8% auto 0;
+  border-radius: 50%;
+  border: 14px solid #333;
+  position: relative;
+  box-shadow: 0 2vw 4vw -1vw rgba(0, 0, 0, 0.8);
+}
+
+.hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 4px;
+  height: 65px;
+  background: #333;
+  top: 79px;
+  transform-origin: 50% 72px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  background: #666;
+  top: 46px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 105px;
 }

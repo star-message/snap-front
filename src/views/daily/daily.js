@@ -25,3 +25,5 @@ export const renderDaily = () => {
   insertAdjacentHTML(selector.body, [title, subTitle, list])
   insertAdjacentElement(selector.body, startButton)
 }
+
+// date format yyyy-mm-dd
